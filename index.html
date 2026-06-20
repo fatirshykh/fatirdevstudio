@@ -1,0 +1,2551 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="description" content="Fatir Dev Studio" />
+    <script
+      src="https://kit.fontawesome.com/02280d45a5.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta
+      name="keywords"
+      content="agency, app, business, company, corporate, designer, freelance, fullpage, modern, office, personal, portfolio, professional, web, web agency"
+    />
+    <meta name="author" content="Themexriver" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo/fatirdevstudiologo.png"
+      type="image/x-icon"
+    />
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Primary Meta Tags -->
+    <title>
+      Fatir Dev Studio | Web Development, Design & Digital Solutions
+    </title>
+    <meta
+      name="title"
+      content="Fatir Dev Studio | Web Development, Design & Digital Solutions"
+    />
+    <meta
+      name="description"
+      content="Fatir Dev Studio, founded by Fatir Ahmed, delivers high-quality websites, SEO services, and digital solutions. Expert in frontend, backend, and full-stack development with modern frameworks."
+    />
+    <meta
+      name="keywords"
+      content="Fatir Dev Studio, Web Developer, Fatir Ahmed, Full Stack Developer, Web Design, SEO, Responsive Websites, Gujranwala, Fatir Portfolio, Web Apps, E-commerce Development, Digital Solutions, Fatir Dev Studio Projects"
+    />
+    <meta name="author" content="Fatir Ahmed" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="theme-color" content="#0d6efd" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fatirdevstudio.netlify.app/" />
+    <meta
+      property="og:title"
+      content="Fatir Dev Studio | Web Development, Design & Digital Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Professional web development studio specializing in responsive design, SEO, and full-stack solutions. Build your digital presence with Fatir Dev Studio."
+    />
+    <meta property="og:image" content="https://fatirdevstudio.netlify.app/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Fatir Dev Studio" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://fatirdevstudio.netlify.app/" />
+    <meta
+      name="twitter:title"
+      content="Fatir Dev Studio | Web Development, Design & Digital Solutions"
+    />
+    <meta
+      name="twitter:description"
+      content="Custom websites, SEO-ready designs, and full-stack web development by Fatir Dev Studio. Get your online presence to the next level."
+    />
+    <meta name="twitter:image" content="https://fatirdevstudio.netlify.app/" />
+
+    <!-- Mobile & Performance -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link
+      rel="icon"
+      href="https://fatirdevstudio.netlify.app/assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="https://fatirdevstudio.netlify.app/" />
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Fatir Dev Studio",
+        "url": "https://fatirdevstudio.netlify.app/",
+        "logo": "https://fatirdevstudio.netlify.app/assets/fatir-dev-banner.jpg",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+92 3348122659",
+            "contactType": "Customer Support",
+            "areaServed": "Global",
+            "availableLanguage": "English"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/fatirdevstudio",
+          "https://www.instagram.com/fatirdevstudio",
+          "https://www.linkedin.com/in/fatir-ahmed"
+        ]
+      }
+    </script>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+      /* =========================
+   GLOBAL BRAND STYLING
+========================= */
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: #0b0b0b;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      /* Logo */
+      .brand-logo a h1 {
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      /* Creative Stroke Text */
+      .creative {
+        -webkit-text-stroke: 2px white;
+      }
+
+      /* Layout fixes */
+      .container .headline h1 {
+        width: 100%;
+        font-size: 50px;
+      }
+
+      .container .row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      /* Slider z-index fix */
+      .bi-slider-section-3 {
+        z-index: 100;
+      }
+
+      /* =========================
+   WHATSAPP FLOAT BUTTON
+========================= */
+
+      .wtsapicon {
+        padding: 15px;
+        background-color: green;
+        width: 55px;
+        height: 55px;
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        z-index: 70;
+      }
+
+      .wtsapicon a i {
+        font-size: 23px;
+      }
+
+      /* =========================
+   REGISTRATION SECTION
+========================= */
+
+      .bi-registration-section {
+        padding: 100px 0;
+        position: relative;
+        background: radial-gradient(circle at top, #0f172a, #020617);
+        overflow: hidden;
+      }
+
+      .bi-registration-section::before,
+      .bi-registration-section::after {
+        content: "";
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        filter: blur(120px);
+        z-index: 0;
+      }
+
+      .bi-registration-section::before {
+        background: rgba(34, 197, 94, 0.15);
+        top: -150px;
+        left: -150px;
+      }
+
+      .bi-registration-section::after {
+        background: rgba(59, 130, 246, 0.12);
+        bottom: -150px;
+        right: -150px;
+      }
+
+      .registration-wrapper {
+        max-width: 1100px; /* increased from 650px */
+        width: 100%;
+        margin: auto;
+        padding: 40px;
+        background: rgba(17, 24, 39, 0.7);
+        backdrop-filter: blur(12px);
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      }
+
+      .registration-wrapper:hover {
+        transform: translateY(-3px);
+      }
+
+      .registration-form .form-group {
+        margin-bottom: 18px;
+      }
+
+      .registration-form input {
+        width: 100%;
+        padding: 14px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.05);
+        color: #fff;
+        outline: none;
+      }
+
+      .registration-form input:focus {
+        border-color: #ff1a1a;
+        box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.2);
+      }
+
+      /* =========================
+   BUTTON (GLOBAL FIX)
+========================= */
+
+      .submit-btn,
+      button {
+        width: 100%;
+        padding: 12px 14px;
+        border-radius: 8px;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+        color: #fff;
+        background: linear-gradient(135deg, #5d0000, #ff0000);
+        transition: 0.3s ease;
+      }
+
+      .submit-btn:hover,
+      button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 18px rgba(255, 0, 0, 0.4);
+      }
+
+      /* =========================
+   CERTIFICATE SECTION
+========================= */
+
+      #bi-certificate-3 {
+        width: 450px !important;
+        display: flex;
+        flex-direction: column;
+        margin: 80px auto;
+        padding: 30px;
+        background: #fff;
+        border-radius: 12px;
+        text-align: center;
+      }
+
+      #bi-certificate-3 h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #1f2a44;
+      }
+
+      #cnic_ver {
+        width: 100%;
+        padding: 12px 14px;
+        border: 1px solid #d0d7e2;
+        border-radius: 8px;
+        color: #020617;
+      }
+
+      #result {
+        margin-top: 25px;
+      }
+
+      /* Card */
+      .card {
+        background: #111;
+        border: 2px solid #8b0000;
+        border-radius: 12px;
+        padding: 25px;
+        color: #fff;
+        box-shadow: 0 0 20px rgba(139, 0, 0, 0.4);
+      }
+
+      /* =========================
+   CERTIFICATES GRID
+========================= */
+
+      .certificates-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .certificate-card {
+        flex: 1 1 320px;
+        max-width: 400px;
+        background: #111;
+        border: 2px solid #8b0000;
+        border-radius: 12px;
+        padding: 20px;
+      }
+
+      /* Certificate Button */
+      .view-btn {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 12px 22px;
+        background: linear-gradient(135deg, #8b0000, #ff0000);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: 0.3s ease;
+        border: 1px solid #ff2d2d;
+      }
+
+      .view-btn:hover {
+        transform: translateY(-2px);
+        background: linear-gradient(135deg, #ff0000, #8b0000);
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+      }
+      /* =========================
+   COURSES SECTION
+========================= */
+
+      .courses-section {
+        padding: 80px 20px;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .section-header h2 {
+        font-size: 40px;
+        color: #ff1a1a;
+      }
+
+      .section-header p {
+        color: #aaa;
+      }
+
+      .courses-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+
+      .course-card {
+        background: #111;
+        border: 1px solid rgba(255, 0, 0, 0.2);
+        padding: 20px;
+        border-radius: 12px;
+        transition: 0.3s;
+      }
+
+      .course-card:hover {
+        transform: translateY(-8px);
+        border-color: #ff1a1a;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+      }
+
+      .course-card h3 {
+        font-size: 18px;
+      }
+
+      .course-card p {
+        color: #aaa;
+        font-size: 14px;
+      }
+
+      .tag {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 12px;
+        padding: 5px 10px;
+        background: rgba(255, 0, 0, 0.1);
+        color: #ff1a1a;
+        border-radius: 20px;
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        .courses-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .courses-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* =========================
+   ADMISSION SECTION
+========================= */
+      .form-grid {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        /* margin: 40px; */
+      }
+
+      .form-col {
+        flex: 1;
+        min-width: 280px;
+      }
+
+      .form-group {
+        margin-bottom: 18px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 13px;
+        color: #cbd5e1;
+      }
+
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        width: 100%;
+        padding: 14px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.05);
+        color: #fff;
+        outline: none;
+        transition: 0.3s ease;
+      }
+
+      .form-group input:focus,
+      .form-group select:focus,
+      .form-group textarea:focus {
+        border-color: #ff1a1a;
+        box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.2);
+      }
+
+      .full-width {
+        width: 100%;
+      }
+
+      @media (max-width: 768px) {
+        .form-grid {
+          flex-direction: column;
+        }
+      }
+
+      .registration-form .form-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .registration-form .form-col {
+        width: 100%;
+      }
+
+      @media (max-width: 768px) {
+        .registration-form .form-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .registration-form select {
+        width: 100%;
+        padding: 14px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 0, 0, 0.2);
+        background: #0b0b0b;
+        color: #ffffff;
+        font-size: 14px;
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s ease;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+
+      /* Dropdown hover/focus */
+      .registration-form select:focus {
+        border-color: #ff1a1a;
+        box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.25);
+      }
+
+      /* Optional: style dropdown arrow (custom look) */
+      .registration-form select {
+        background-image:
+          linear-gradient(45deg, transparent 50%, #ff1a1a 50%),
+          linear-gradient(135deg, #ff1a1a 50%, transparent 50%);
+        background-position:
+          calc(100% - 18px) calc(1em + 2px),
+          calc(100% - 13px) calc(1em + 2px);
+        background-size:
+          5px 5px,
+          5px 5px;
+        background-repeat: no-repeat;
+      }
+
+      /* Options inside dropdown */
+      .registration-form select option {
+        background: #111;
+        color: #fff;
+      }
+
+      /* SECTION */
+      .review-carousel-section {
+        padding: 100px 0;
+        background: radial-gradient(circle at top, #1a0000, #000);
+        overflow: hidden;
+      }
+
+      /* HEADER */
+      .section-header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .subtitle {
+        color: #ff1a1a;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 13px;
+      }
+
+      .section-header h2 {
+        font-size: 40px;
+        margin: 10px 0;
+      }
+
+      .rating-summary {
+        margin-top: 15px;
+      }
+
+      .avg-rating {
+        font-size: 44px;
+        color: #ff1a1a;
+        font-weight: bold;
+      }
+
+      .stars {
+        color: gold;
+        font-size: 18px;
+      }
+
+      .meta {
+        color: #aaa;
+        font-size: 13px;
+      }
+
+      /* CAROUSEL */
+      .carousel-track {
+        display: flex;
+        gap: 20px;
+        width: max-content;
+        animation: scroll 50s linear infinite;
+        padding: 20px;
+      }
+
+      /* CARD */
+      .review-card {
+        width: 320px;
+        flex-shrink: 0;
+        background: linear-gradient(145deg, #111, #0a0a0a);
+        border: 1px solid rgba(255, 0, 0, 0.25);
+        padding: 20px;
+        border-radius: 12px;
+        transition: 0.3s;
+      }
+
+      .review-card:hover {
+        transform: scale(1.05);
+        border-color: #ff1a1a;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.25);
+      }
+
+      .review-card p {
+        font-size: 14px;
+        color: #ddd;
+        line-height: 1.6;
+        margin: 10px 0;
+      }
+
+      /* AUTHOR */
+      .reviewer strong {
+        display: block;
+        color: #ff1a1a;
+      }
+
+      .reviewer span {
+        font-size: 12px;
+        color: #888;
+      }
+
+      /* ANIMATION */
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 768px) {
+        .review-card {
+          width: 280px;
+        }
+
+        .section-header h2 {
+          font-size: 28px;
+        }
+      }
+
+      /* ===================
+      TECH STACK
+      ===================== */
+      .tech-stack-section {
+        padding: 90px 20px;
+        background: #0b0b0b;
+        color: white;
+      }
+
+      /* Header */
+      .tech-stack-section .section-header {
+        text-align: center;
+        margin-bottom: 45px;
+      }
+
+      .tech-stack-section .section-header h2 {
+        font-size: 38px;
+        color: #ff1a1a;
+        margin-bottom: 10px;
+      }
+
+      .tech-stack-section .section-header p {
+        color: #aaa;
+        font-size: 14px;
+      }
+
+      /* Grid */
+      .tech-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+      }
+
+      /* Card */
+      .tech-card {
+        background: #111;
+        border: 1px solid rgba(255, 0, 0, 0.25);
+        padding: 18px;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: 600;
+        color: #ddd;
+        transition: 0.3s ease;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Hover glow effect */
+      .tech-card::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(255, 0, 0, 0.15), transparent);
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      .tech-card:hover {
+        transform: translateY(-6px);
+        border-color: #ff1a1a;
+        box-shadow: 0 0 18px rgba(255, 0, 0, 0.35);
+      }
+
+      .tech-card:hover::before {
+        opacity: 1;
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        .tech-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .tech-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      /* footer ================================================================ */
+      .footer-heavy {
+        background: #0b0b0b;
+        color: #fff;
+      }
+
+      /* CTA */
+      .footer-cta {
+        padding: 60px 20px;
+        border-bottom: 1px solid rgba(255, 0, 0, 0.2);
+      }
+
+      .cta-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #111;
+        padding: 30px;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 0, 0, 0.3);
+        flex-wrap: wrap;
+      }
+
+      .cta-wrap h2 {
+        color: #ff1a1a;
+        margin-bottom: 5px;
+      }
+
+      .cta-wrap p {
+        color: #aaa;
+        font-size: 14px;
+      }
+
+      .cta-wrap a {
+        padding: 12px 24px;
+        background: linear-gradient(135deg, #8b0000, #ff1a1a);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+      }
+
+      /* MAIN GRID */
+      .footer-main {
+        padding: 70px 20px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+      }
+
+      /* COLUMN */
+      .col h3,
+      .col h4 {
+        color: #ff1a1a;
+        margin-bottom: 15px;
+      }
+
+      .col p,
+      .col li {
+        color: #aaa;
+        font-size: 14px;
+        line-height: 1.7;
+      }
+
+      .col ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .col ul li {
+        margin-bottom: 8px;
+      }
+
+      .col ul li a {
+        color: #aaa;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .col ul li a:hover {
+        color: #ff1a1a;
+      }
+
+      /* CONTACT BOX */
+      .contact-box {
+        margin-top: 15px;
+        padding: 15px;
+        border-left: 2px solid #ff1a1a;
+        background: rgba(255, 0, 0, 0.05);
+      }
+
+      /* BOTTOM */
+      .footer-bottom {
+        text-align: center;
+        padding: 20px;
+        border-top: 1px solid rgba(255, 0, 0, 0.2);
+        color: #777;
+        font-size: 13px;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 1000px) {
+        .footer-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .footer-grid {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+
+        .cta-wrap {
+          flex-direction: column;
+          text-align: center;
+          gap: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body class="home-3">
+    <div id="preloader"></div>
+    <div class="up">
+      <a href="#" class="scrollup text-center"
+        ><i class="fas fa-chevron-up"></i
+      ></a>
+    </div>
+    <div class="cursor"></div>
+
+    <!-- Start of header section
+	============================================= -->
+    <header id="bi-header" class="bi-header-section header-style-three">
+      <div class="container">
+        <div
+          class="bi-header-content d-flex justify-content-between align-items-center"
+          data-background="assets/img/bg/header-bg.png"
+        >
+          <div class="brand-logo">
+            <a href="#">
+              <!-- <img src="assets/img/logo/logo3.png" alt=""> -->
+              <h1>Fatir Dev Studio</h1>
+            </a>
+          </div>
+          <div class="bi-header-main-navigation">
+            <nav class="main-navigation clearfix ul-li">
+              <ul id="main-nav" class="nav navbar-nav clearfix">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#bi-slider-3">Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#bi-about-3">About</a>
+                </li>
+
+                <!-- INSTITUTE SIDE -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#courses">Courses</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#bi-register-3">Admissions</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#bi-certificate-3">Certificates</a>
+                </li>
+
+                <!-- AGENCY SIDE -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#bi-what-we-offer">Services</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="bi-header-cta-btn-grp d-flex align-items-center">
+            <div class="offcanves-btn navSidebar-button">
+              <button><i class="fal fa-bars"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="mobile_menu position-relative">
+          <div class="mobile_menu_button open_mobile_menu">
+            <i class="fal fa-bars"></i>
+          </div>
+          <div class="mobile_menu_wrap">
+            <div class="mobile_menu_overlay open_mobile_menu"></div>
+            <div class="mobile_menu_content">
+              <div class="mobile_menu_close open_mobile_menu">
+                <i class="fal fa-times"></i>
+              </div>
+              <div class="m-brand-logo brand-logo">
+                <a href="%21.#">
+                  <h1>Fatir Dev Studio & Institute</h1>
+                </a>
+              </div>
+              <div class="mobile-search-bar position-relative">
+                <form action="#">
+                  <input type="text" name="search" placeholder="Keywords" />
+                  <button><i class="fal fa-search"></i></button>
+                </form>
+              </div>
+              <nav class="mobile-main-navigation clearfix ul-li">
+                <ul id="m-main-nav" class="nav navbar-nav clearfix">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#bi-slider-3">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#bi-about-3">About</a>
+                  </li>
+
+                  <!-- INSTITUTE -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#courses">Courses</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#bi-register-3">Admissions</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#bi-certificate-3"
+                      >Verify Certificate</a
+                    >
+                  </li>
+
+                  <!-- AGENCY -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#bi-what-we-offer">Services</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#bi-team-3">Team</a>
+                  </li>
+
+                  <!-- CONTACT -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!-- /Mobile-Menu -->
+        </div>
+      </div>
+    </header>
+    <!-- Sidebar sidebar Item -->
+    <div class="xs-sidebar-group info-group">
+      <div class="xs-overlay xs-bg-black">
+        <div class="row loader-area">
+          <div class="col-3 preloader-wrap">
+            <div class="loader-bg"></div>
+          </div>
+          <div class="col-3 preloader-wrap">
+            <div class="loader-bg"></div>
+          </div>
+          <div class="col-3 preloader-wrap">
+            <div class="loader-bg"></div>
+          </div>
+          <div class="col-3 preloader-wrap">
+            <div class="loader-bg"></div>
+          </div>
+        </div>
+      </div>
+      <div class="xs-sidebar-widget" data-background="assets/img/bg/texture.">
+        <div class="sidebar-widget-container">
+          <div class="widget-heading">
+            <a href="#" class="close-side-widget text-uppercase">
+              <i class="fal fa-times"></i> Close
+            </a>
+          </div>
+          <div class="sidebar-textwidget">
+            <!-- Sidebar Info Content -->
+            <div class="sidebar-info-contents headline pera-content">
+              <div class="content-inner">
+                <!-- BRAND -->
+                <div class="sidebar-logo brand-logo">
+                  <a href="#">
+                    <h1 style="text-align: left">
+                      Fatir Dev Studio
+                      <span style="color: #ff1a1a">& Institute</span>
+                    </h1>
+                  </a>
+                </div>
+
+                <!-- MENU -->
+                <div class="sidebar-menu ul-li-block">
+                  <ul>
+                    <li>
+                      <a href="#bi-about-3">
+                        <i class="fal fa-home"></i> About Us
+                      </a>
+                    </li>
+
+                    <!-- INSTITUTE -->
+                    <li>
+                      <a href="#courses">
+                        <i class="fal fa-graduation-cap"></i> Courses
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#bi-register-3">
+                        <i class="fal fa-user-plus"></i> Admissions
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#bi-certificate-3">
+                        <i class="fal fa-check-circle"></i> Verify Certificate
+                      </a>
+                    </li>
+
+                    <!-- AGENCY -->
+                    <li>
+                      <a href="#bi-what-we-offer">
+                        <i class="fal fa-cogs"></i> Services
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#bi-team-3">
+                        <i class="fal fa-users"></i> Team
+                      </a>
+                    </li>
+
+                    <!-- CONTACT -->
+                    <li>
+                      <a href="https://wa.me/923348122659">
+                        <i class="fal fa-envelope"></i> Contact
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- FOOTER -->
+              <div class="sidebar-copyright text-center">
+                © 2025 Fatir Dev Studio & Institute. All Rights Reserved.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of header section
+	============================================= -->
+    <div
+      data-bs-spy="scroll"
+      data-bs-target=".main-navigation"
+      data-bs-smooth-scroll="true"
+    >
+      <!-- Start of Slider section
+	============================================= -->
+      <section
+        id="bi-slider-3"
+        class="bi-slider-section-3"
+        data-background="assets/img/bg/slider-bg.png"
+      >
+        <div class="bi-slider-content-3 position-relative">
+          <span
+            class="slider_shape shape_1 position-absolute"
+            data-parallax='{"y" : -60}'
+            ><img src="assets/img/icon/shape_1.png" alt=""
+          /></span>
+          <span class="slider_shape shape_2 position-absolute"
+            ><img src="assets/img/icon/shape_2.png" alt=""
+          /></span>
+          <span class="slider_shape shape_3 position-absolute"
+            ><img src="assets/img/icon/shape_3.png" alt=""
+          /></span>
+          <span class="slider_shape shape_4 position-absolute"
+            ><img src="assets/img/icon/shape_4.png" alt=""
+          /></span>
+          <span
+            class="slider_shape shape_5 position-absolute"
+            data-parallax='{"y" : 60, "rotateY":800}'
+            ><img src="assets/img/icon/shape_5.png" alt=""
+          /></span>
+
+          <div class="bi-slider-wrapper-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="bi-slider-item-3 position-relative">
+                  <div class="bi-slider-img3_1 position-absolute">
+                    <img src="assets/img/slider/slide_vector_1.png" alt="" />
+                  </div>
+                  <div class="bi-slider-img3_2 position-absolute">
+                    <img src="assets/img/slider/slide_3.png" alt="" />
+                  </div>
+                  <div class="container">
+                    <div class="bi-slider-text-3 headline pera-content">
+                      <div class="slider-sub-title text-uppercase">
+                        Welcome to FATIR DEV STUDIO & INSTITUTE
+                      </div>
+
+                      <h1>
+                        <span class="creative">Build. Learn. </span>
+                        Grow in Tech Industry
+                      </h1>
+
+                      <div class="slider-img-desc d-flex align-items-center">
+                        <div class="inner-img">
+                          <img src="assets/img/slider/slide_4.png" alt="" />
+                        </div>
+
+                        <div class="inner-text">
+                          We operate as both a professional development studio
+                          and a practical training institute. Students learn
+                          real-world skills through projects, while clients get
+                          production-level digital solutions.
+                        </div>
+                      </div>
+
+                      <div class="slider-btn-grp d-flex align-items-center">
+                        <div
+                          class="bi-btn-3 text-uppercase"
+                          style="width: 230px"
+                        >
+                          <a href="#courses">
+                            Our Courses
+                            <img src="assets/img/icon/arrow.svg" alt="" />
+                          </a>
+                        </div>
+
+                        <div
+                          class="bi-btn-3 text-uppercase"
+                          style="width: 340px"
+                        >
+                          <a href="https://wa.me/+923348122659" target="_blank">
+                            Hire Us
+                            <img src="assets/img/icon/arrow.svg" alt="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bi-slider-item-3 position-relative">
+                  <div class="bi-slider-img3_1 position-absolute">
+                    <img src="assets/img/slider/slide_vector_1.png" alt="" />
+                  </div>
+                  <div class="bi-slider-img3_2 position-absolute">
+                    <img src="assets/img/slider/slide_3.png" alt="" />
+                  </div>
+                  <div class="container">
+                    <div class="bi-slider-text-3 headline pera-content">
+                      <div class="slider-sub-title text-uppercase">
+                        Learn With Practical Training
+                      </div>
+                      <h1>
+                        <span class="creative">Master</span>
+                        Web Development Skills
+                      </h1>
+                      <div class="slider-img-desc d-flex align-items-center">
+                        <div class="inner-img">
+                          <img src="assets/img/slider/slide_4.png" alt="" />
+                        </div>
+                        <div class="inner-text">
+                          Our institute offers structured courses in web
+                          development, design, and programming. Every student
+                          works on real projects to build industry-ready skills,
+                          not just theory.
+                        </div>
+                      </div>
+                      <div class="slider-btn-grp d-flex align-items-center">
+                        <div class="bi-btn-3 text-uppercase">
+                          <a href="#courses"
+                            >Our Courses
+                            <img src="assets/img/icon/arrow.svg" alt=""
+                          /></a>
+                        </div>
+                        <div class="bi-slider-video-play">
+                          <a
+                            class="d-flex align-items-center video_box"
+                            href="https://wa.me/+923348122659"
+                            target="_blank"
+                            ><i class="fal fa-play-circle"></i>Whatsapp Now!</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bi-slider-item-3 position-relative">
+                  <div class="bi-slider-img3_1 position-absolute">
+                    <img src="assets/img/slider/slide_vector_1.png" alt="" />
+                  </div>
+                  <div class="bi-slider-img3_2 position-absolute">
+                    <img src="assets/img/slider/slide_3.png" alt="" />
+                  </div>
+                  <div class="container">
+                    <div class="bi-slider-text-3 headline pera-content">
+                      <div class="slider-sub-title text-uppercase">
+                        Professional Development Services
+                      </div>
+                      <h1>
+                        <span class="creative">Build</span>
+                        Websites & Digital Products
+                      </h1>
+                      <div class="slider-img-desc d-flex align-items-center">
+                        <div class="inner-img">
+                          <img src="assets/img/slider/slide_4.png" alt="" />
+                        </div>
+                        <div class="inner-text">
+                          We design and develop modern websites, web apps, and
+                          branding solutions for businesses. Our focus is
+                          performance, scalability, and clean user experience.
+                        </div>
+                      </div>
+                      <div class="slider-btn-grp d-flex align-items-center">
+                        <div class="bi-btn-3 text-uppercase">
+                          <a href="#contact"
+                            >Contact Us
+                            <img src="assets/img/icon/arrow.svg" alt=""
+                          /></a>
+                        </div>
+                        <div class="bi-slider-video-play">
+                          <a
+                            class="d-flex align-items-center video_box"
+                            href="https://wa.me/+923348122659"
+                            target="_blank"
+                            ><i class="fal fa-play-circle"></i>Whatsapp Now!</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bi-main-arrow-next-prev position-absolute d-flex align-items-center justify-content-center"
+          >
+            <span class="arrow-bg-zooming position-absolute"
+              ><img src="assets/img/bg/arrow-bg.jpg" alt=""
+            /></span>
+            <div
+              class="bi-slider-arrow d-flex justify-content-center align-items-center bi-main-button-prev_3"
+            >
+              <i class="fal fa-long-arrow-up"></i>
+            </div>
+            <div class="swiper-paginations text-center"></div>
+            <div
+              class="bi-slider-arrow d-flex justify-content-center align-items-center bi-main-button-next_3"
+            >
+              <i class="fal fa-long-arrow-down"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Slider section
+	============================================= -->
+      <!-- wtsapp icon -->
+      <div class="wtsapicon">
+        <a href="https://wa.me/+923348122659" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </div>
+      <!-- Start of What We offer section
+	============================================= -->
+      <section
+        id="bi-what-we-offer"
+        class="bi-what-we-offer-section position-relative"
+      >
+        <div class="container">
+          <!-- HEADER -->
+          <div
+            class="bi-what-we-offer-top-content d-flex flex-wrap justify-content-between align-items-end"
+          >
+            <div class="bi-section-title-3 headline">
+              <div class="bi-subtitle text-uppercase">What We Do</div>
+
+              <h2 class="tx-split-text split-in-right">
+                Learn Skills & Build Digital Solutions
+              </h2>
+            </div>
+
+            <div class="bi-btn-3 text-uppercase">
+              <a href="#courses">
+                Explore Courses <img src="assets/img/icon/arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <!-- ================= TRAINING ================= -->
+
+          <div
+            class="bi-what-we-offer-item d-flex justify-content-between align-items-center"
+          >
+            <div class="bi-what-we-offer-img-title d-flex align-items-center">
+              <div class="offer-img">
+                <img src="assets/img/about/of1.png" alt="" />
+              </div>
+              <div class="offer-title headline">
+                <h3>Web Development Training</h3>
+              </div>
+            </div>
+            <div class="bi-what-we-offer-desc">
+              Learn HTML, CSS, JavaScript, React and build real-world websites
+              with projects.
+            </div>
+          </div>
+
+          <div
+            class="bi-what-we-offer-item d-flex justify-content-between align-items-center"
+          >
+            <div class="bi-what-we-offer-img-title d-flex align-items-center">
+              <div class="offer-img">
+                <img src="assets/img/about/of2.png" alt="" />
+              </div>
+              <div class="offer-title headline">
+                <h3>UI/UX & Product Design</h3>
+              </div>
+            </div>
+            <div class="bi-what-we-offer-desc">
+              Master Figma, wireframing, prototyping, and user experience design
+              for real apps.
+            </div>
+          </div>
+
+          <div
+            class="bi-what-we-offer-item d-flex justify-content-between align-items-center"
+          >
+            <div class="bi-what-we-offer-img-title d-flex align-items-center">
+              <div class="offer-img">
+                <img src="assets/img/about/of3.png" alt="" />
+              </div>
+              <div class="offer-title headline">
+                <h3>Programming Fundamentals</h3>
+              </div>
+            </div>
+            <div class="bi-what-we-offer-desc">
+              Learn Python, JavaScript, OOP concepts, and problem-solving for
+              software development.
+            </div>
+          </div>
+
+          <div
+            class="bi-what-we-offer-item d-flex justify-content-between align-items-center"
+          >
+            <div class="bi-what-we-offer-img-title d-flex align-items-center">
+              <div class="offer-img">
+                <img src="assets/img/about/of4.png" alt="" />
+              </div>
+              <div class="offer-title headline">
+                <h3>Freelancing & Career Growth</h3>
+              </div>
+            </div>
+            <div class="bi-what-we-offer-desc">
+              Learn how to get clients, build portfolio, and start earning as a
+              developer/designer.
+            </div>
+          </div>
+
+          <!-- ================= DIGITAL SERVICES ================= -->
+
+          <div class="bi-what-we-offer-top-content" style="margin-top: 60px">
+            <div class="bi-section-title-3 headline">
+              <h2 style="font-size: 30px">Digital Studio Services</h2>
+            </div>
+          </div>
+
+          <div
+            class="bi-what-we-offer-item d-flex justify-content-between align-items-center"
+          >
+            <div class="bi-what-we-offer-img-title d-flex align-items-center">
+              <div class="offer-img">
+                <img src="assets/img/about/of1.png" alt="" />
+              </div>
+              <div class="offer-title headline">
+                <h3>Website Development</h3>
+              </div>
+            </div>
+            <div class="bi-what-we-offer-desc">
+              Business websites, portfolios, landing pages, and full-stack web
+              applications.
+            </div>
+          </div>
+
+          <div
+            class="bi-what-we-offer-item d-flex justify-content-between align-items-center"
+          >
+            <div class="bi-what-we-offer-img-title d-flex align-items-center">
+              <div class="offer-img">
+                <img src="assets/img/about/of2.png" alt="" />
+              </div>
+              <div class="offer-title headline">
+                <h3>E-Commerce Solutions</h3>
+              </div>
+            </div>
+            <div class="bi-what-we-offer-desc">
+              Online stores with cart system, payment integration, and admin
+              dashboard.
+            </div>
+          </div>
+
+          <div
+            class="bi-what-we-offer-item d-flex justify-content-between align-items-center"
+          >
+            <div class="bi-what-we-offer-img-title d-flex align-items-center">
+              <div class="offer-img">
+                <img src="assets/img/about/of3.png" alt="" />
+              </div>
+              <div class="offer-title headline">
+                <h3>UI/UX & Branding Design</h3>
+              </div>
+            </div>
+            <div class="bi-what-we-offer-desc">
+              Modern UI design, logos, branding identity, and product design
+              systems.
+            </div>
+          </div>
+
+          <div
+            class="bi-what-we-offer-item d-flex justify-content-between align-items-center"
+          >
+            <div class="bi-what-we-offer-img-title d-flex align-items-center">
+              <div class="offer-img">
+                <img src="assets/img/about/of4.png" alt="" />
+              </div>
+              <div class="offer-title headline">
+                <h3>Mobile App Development</h3>
+              </div>
+            </div>
+            <div class="bi-what-we-offer-desc">
+              Android and hybrid apps using modern frameworks and scalable
+              architecture.
+            </div>
+          </div>
+
+          <div
+            class="bi-what-we-offer-item d-flex justify-content-between align-items-center"
+          >
+            <div class="bi-what-we-offer-img-title d-flex align-items-center">
+              <div class="offer-img">
+                <img src="assets/img/about/of1.png" alt="" />
+              </div>
+              <div class="offer-title headline">
+                <h3>SEO & Digital Marketing</h3>
+              </div>
+            </div>
+            <div class="bi-what-we-offer-desc">
+              Improve search ranking, traffic, branding, and online visibility
+              for businesses.
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of What We offer section
+	============================================= -->
+
+      <!-- Start of About section
+	============================================= -->
+      <section id="bi-about-3" class="bi-about-section-3 position-relative">
+        <div class="container">
+          <div class="bi-about-content-3">
+            <div class="row">
+              <!-- LEFT TEXT -->
+              <div class="col-lg-5">
+                <div class="bi-about-text-area-3">
+                  <div class="bi-section-title-3 headline pera-content">
+                    <div class="bi-subtitle text-uppercase">About Us</div>
+
+                    <h3 class="tx-split-text split-in-right">
+                      A Digital Studio & Learning Institute Building Real Skills
+                    </h3>
+
+                    <div class="bins-text">
+                      <p>
+                        Fatir Dev Studio & Institute focuses on two things:
+                        building real digital products for clients and training
+                        students with practical, project-based learning in web
+                        development, UI/UX, and modern technologies.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="bi-abut-feature-list ul-li">
+                    <ul>
+                      <li>
+                        <i class="fal fa-code"></i> Real Project-Based Learning
+                      </li>
+                      <li>
+                        <i class="fal fa-chalkboard-teacher"></i>
+                        Industry-Focused Training
+                      </li>
+                      <li>
+                        <i class="fal fa-users"></i> Hands-on Student Guidance
+                      </li>
+                      <li>
+                        <i class="fal fa-briefcase"></i> Client-Based
+                        Development Work
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- RIGHT IMAGE -->
+              <div class="col-lg-7">
+                <div class="bi-about-img-3 position-relative">
+                  <div class="about-img bi-img-animation">
+                    <img src="assets/img/about/ab5.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VIDEO + QUOTE SECTION -->
+          <div class="bi-about-video-play-area position-relative">
+            <!-- EXPERIENCE BOX FIXED -->
+            <div
+              class="bi-about-exp-area position-absolute headline text-center"
+              data-background="assets/img/bg/exp-bg.png"
+            >
+              <h3>5+</h3>
+              <span>Years of Practical Experience</span>
+            </div>
+
+            <div class="row">
+              <!-- VIDEO -->
+              <div class="col-lg-6">
+                <div class="bi-about-video-play position-relative">
+                  <div class="video-play-btn position-absolute">
+                    <a
+                      class="video_box d-flex justify-content-center align-items-center"
+                      href="https://www.youtube.com/watch?v=Nv7RgGpu6ME"
+                    >
+                      <i class="fas fa-play"></i>
+                    </a>
+                  </div>
+
+                  <div class="video-play-img">
+                    <img src="assets/img/about/ab6.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- QUOTE -->
+              <div class="col-lg-6">
+                <div
+                  class="bi-about-text-quote-area bins-text headline pera-content"
+                >
+                  <p>
+                    We don’t just design websites — we build digital systems and
+                    train future developers using real industry workflows, not
+                    just theory.
+                  </p>
+
+                  <div class="quote-author text-uppercase">
+                    <h3>Fatir Ahmed</h3>
+                    <span>Founder – Fatir Dev Studio & Institute</span>
+                  </div>
+
+                  <div class="bi-btn-3 text-uppercase">
+                    <a href="#bi-register-3">
+                      Join Institute
+                      <img src="assets/img/icon/arrow.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of About section
+	============================================= -->
+
+      <!-- Start of Courses section
+============================================= -->
+      <section class="courses-section" id="courses">
+        <div class="container">
+          <div class="section-header">
+            <h2>Latest Courses</h2>
+            <p>Learn practical skills with real-world projects</p>
+          </div>
+
+          <div class="courses-grid">
+            <!-- 1 -->
+            <div class="course-card">
+              <h3>HTML, CSS & JavaScript</h3>
+              <p>Beginner • 2 Months</p>
+              <span class="tag">Web Development</span>
+              <button><a href="#bi-register-3">Enroll Now</a></button>
+            </div>
+
+            <!-- 2 -->
+            <div class="course-card">
+              <h3>Responsive Web Design</h3>
+              <p>Beginner • 1.5 Months</p>
+              <span class="tag">Web Design</span>
+              <button><a href="#bi-register-3">Enroll Now</a></button>
+            </div>
+
+            <!-- 3 -->
+            <div class="course-card">
+              <h3>Frontend Development</h3>
+              <p>Intermediate • 3 Months</p>
+              <span class="tag">Web Dev</span>
+              <button><a href="#bi-register-3">Enroll Now</a></button>
+            </div>
+
+            <!-- 4 -->
+            <div class="course-card">
+              <h3>React JS Basics</h3>
+              <p>Intermediate • 2 Months</p>
+              <span class="tag">Framework</span>
+              <button><a href="#bi-register-3">Enroll Now</a></button>
+            </div>
+
+            <!-- 5 -->
+            <div class="course-card">
+              <h3>Python Programming</h3>
+              <p>Beginner • 3 Months</p>
+              <span class="tag">Programming</span>
+              <button><a href="#bi-register-3">Enroll Now</a></button>
+            </div>
+
+            <!-- 6 -->
+            <div class="course-card">
+              <h3>OOP in Python</h3>
+              <p>Intermediate • 2 Months</p>
+              <span class="tag">Programming</span>
+              <button><a href="#bi-register-3">Enroll Now</a></button>
+            </div>
+
+            <!-- 7 -->
+            <div class="course-card">
+              <h3>JavaScript Advanced</h3>
+              <p>Advanced • 2 Months</p>
+              <span class="tag">Programming</span>
+              <button><a href="#bi-register-3">Enroll Now</a></button>
+            </div>
+
+            <!-- 8 -->
+            <div class="course-card">
+              <h3>Backend Development</h3>
+              <p>Intermediate • 3 Months</p>
+              <span class="tag">Server Side</span>
+              <button><a href="#bi-register-3">Enroll Now</a></button>
+            </div>
+
+            <!-- 9 -->
+            <div class="course-card">
+              <h3>UI/UX Design</h3>
+              <p>Beginner • 2 Months</p>
+              <span class="tag">Design</span>
+              <button><a href="#bi-register-3">Enroll Now</a></button>
+            </div>
+
+            <!-- 10 -->
+            <div class="course-card">
+              <h3>Figma Mastery</h3>
+              <p>Beginner • 1 Month</p>
+              <span class="tag">Design Tool</span>
+              <button><a href="#bi-register-3">Enroll Now</a></button>
+            </div>
+
+            <!-- 11 -->
+            <div class="course-card">
+              <h3>Graphic Design Basics</h3>
+              <p>Beginner • 2 Months</p>
+              <span class="tag">Design</span>
+              <button><a href="#bi-register-3">Enroll Now</a></button>
+            </div>
+
+            <!-- 12 -->
+            <div class="course-card">
+              <h3>Full Stack Development</h3>
+              <p>Advanced • 4 Months</p>
+              <span class="tag">Complete</span>
+              <button><a href="#bi-register-3">Enroll Now</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Courses section
+============================================= -->
+      <!-- Start of Tech Stack Section 
+	============================================= -->
+
+      <section id="bi-tech-stack" class="tech-stack-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Technologies We Teach</h2>
+            <p>Modern tools and frameworks used in real-world development</p>
+          </div>
+
+          <div class="tech-grid">
+            <div class="tech-card">HTML5</div>
+            <div class="tech-card">CSS3</div>
+            <div class="tech-card">JavaScript</div>
+            <div class="tech-card">Bootstrap</div>
+
+            <div class="tech-card">React JS</div>
+            <div class="tech-card">Node JS</div>
+            <div class="tech-card">Express JS</div>
+            <div class="tech-card">PHP</div>
+
+            <div class="tech-card">MySQL</div>
+            <div class="tech-card">MongoDB</div>
+            <div class="tech-card">Git & GitHub</div>
+            <div class="tech-card">Firebase</div>
+
+            <div class="tech-card">Figma</div>
+            <div class="tech-card">Netlify</div>
+            <div class="tech-card">Vercel</div>
+            <div class="tech-card">API Integration</div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Tech Stack Section
+	============================================= -->
+
+      <!-- Start of Student Registration Section -->
+      <section
+        id="bi-register-3"
+        class="bi-registration-section position-relative"
+      >
+        <div class="container">
+          <div class="bi-section-title-3 text-center headline pera-content">
+            <div class="bi-subtitle text-uppercase">Admissions Open</div>
+            <h2>Student Registration Form</h2>
+          </div>
+
+          <div class="registration-wrapper" style="margin: 40px auto">
+            <form id="studentForm" class="registration-form">
+              <div class="form-grid">
+                <!-- LEFT COLUMN -->
+                <div class="form-col">
+                  <div class="form-group">
+                    <label>Student Name</label>
+                    <input type="text" id="name" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label>Father Name</label>
+                    <input type="text" id="fatherName" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="text" id="phone" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label>Student CNIC</label>
+                    <input type="text" id="cnic" required />
+                  </div>
+                </div>
+
+                <!-- RIGHT COLUMN -->
+                <div class="form-col">
+                  <div class="form-group">
+                    <label>Father CNIC</label>
+                    <input type="text" id="fatherCnic" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label>City</label>
+                    <input type="text" id="city" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label>Choose Course</label>
+                    <select id="course" required>
+                      <option value="">Select Course</option>
+                      <option>Web Development</option>
+                      <option>Frontend Development</option>
+                      <option>Backend Development</option>
+                      <option>Full Stack Development</option>
+                      <option>UI/UX Design</option>
+                      <option>Python Programming</option>
+                      <option>Graphic Design</option>
+                      <option>Freelancing</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Education Level</label>
+                    <input type="text" id="education" required />
+                  </div>
+                </div>
+              </div>
+
+              <!-- FULL WIDTH -->
+              <div class="form-group full-width">
+                <label>Complete Address</label>
+                <textarea
+                  id="address"
+                  rows="4"
+                  placeholder="Enter full address..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-col">
+                  <div class="form-group">
+                    <label>Student Image</label>
+                    <input
+                      type="file"
+                      id="studentImg"
+                      accept="image/*"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-col">
+                  <div class="form-group">
+                    <label>Payment Slip (1250 PKR)</label>
+                    <input
+                      type="file"
+                      id="paymentSlip"
+                      accept="image/*"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                Submit Admission on WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- End of Student Registration Section -->
+
+      <!-- START of Student VERIFICATION Section -->
+      <section id="bi-certificate-3">
+        <h2>Certificate Verification</h2>
+
+        <input
+          type="text"
+          id="cnic_ver"
+          placeholder="Enter Your CNIC 123456589111"
+        /><br />
+
+        <button onclick="verifyCertificate()">Search Certificate</button>
+
+        <div id="result"></div>
+      </section>
+      <!-- END of Student VERIFICATION Section -->
+
+      <!-- Start of Team section
+	============================================= -->
+      <section id="bi-team-3" class="bi-team-section-3 position-relative">
+        <span class="bi-shape-anim anim_1 position-absolute"
+          ><img src="assets/img/icon/is8.png" alt=""
+        /></span>
+        <span class="bi-shape-anim anim_2 position-absolute"
+          ><img src="assets/img/icon/is9.png" alt=""
+        /></span>
+        <div class="container">
+          <div class="bi-section-title-3 text-center headline pera-content">
+            <div
+              class="bi-subtitle text-uppercase wow fadeInRight"
+              data-wow-delay="200ms"
+              data-wow-duration="1500ms"
+            >
+              our Team members
+            </div>
+            <h2 class="headline-title">Our Experiences Team</h2>
+          </div>
+        </div>
+        <div class="bi-team-slider-content-3 d-flex justify-content-end">
+          <div class="bi-team-slider-3 swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="bi-team-item-3 text-center">
+                  <div class="bi-team-img-social position-relative">
+                    <img src="assets/img/team/man.jpg" alt="" />
+                    <div class="team-social position-absolute">
+                      <a href="https://wa.me/+923348122659" target="_blank"
+                        ><i class="fa-brands fa-whatsapp"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="bi-team-text headline text-uppercase">
+                    <h3>
+                      <a href="https://wa.me/+923348122659">Hashim Suleman</a>
+                    </h3>
+                    <span
+                      >Senior Graphic Designer & Visual Branding Expert</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bi-team-item-3 text-center">
+                  <div class="bi-team-img-social position-relative">
+                    <img src="assets/img/team/ceo.png" alt="" />
+                    <div class="team-social position-absolute">
+                      <a href="https://wa.me/+923348122659" target="_blank"
+                        ><i class="fa-brands fa-whatsapp"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="bi-team-text headline text-uppercase">
+                    <h3>
+                      <a href="https://wa.me/+923348122659">Fatir Sheikh</a>
+                    </h3>
+                    <span
+                      >Founder & Lead Full Stack Developer / Instructor</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bi-team-item-3 text-center">
+                  <div class="bi-team-img-social position-relative">
+                    <img src="assets/img/team/ff.avif" alt="" />
+                    <div class="team-social position-absolute">
+                      <a href="https://wa.me/+923348122659" target="_blank"
+                        ><i class="fa-brands fa-whatsapp"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="bi-team-text headline text-uppercase">
+                    <h3>
+                      <a href="https://wa.me/+923348122659">Ayesha Sajjal</a>
+                    </h3>
+                    <span>UI/UX Designer & Frontend Experience Specialist</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bi-team-item-3 text-center">
+                  <div class="bi-team-img-social position-relative">
+                    <img src="assets/img/team/ff.avif" alt="" />
+                    <div class="team-social position-absolute">
+                      <a href="https://wa.me/+923348122659" target="_blank"
+                        ><i class="fa-brands fa-whatsapp"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="bi-team-text headline text-uppercase">
+                    <h3>
+                      <a href="https://wa.me/+923348122659">Aynaya Rizwan</a>
+                    </h3>
+                    <span>Full Stack Developer (Web Applications & APIs)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="bi-team-item-3 text-center">
+                  <div class="bi-team-img-social position-relative">
+                    <img src="assets/img/team/man.jpg" alt="" />
+                    <div class="team-social position-absolute">
+                      <a href="https://wa.me/+923348122659" target="_blank"
+                        ><i class="fa-brands fa-whatsapp"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="bi-team-text headline text-uppercase">
+                    <h3>
+                      <a href="https://wa.me/+923348122659">AWAIS & HASSAN</a>
+                    </h3>
+                    <span>ALGORITHMS & Architect</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bi-team-item-3 text-center">
+                  <div class="bi-team-img-social position-relative">
+                    <img src="assets/img/team/ff.avif" alt="" />
+                    <div class="team-social position-absolute">
+                      <a href="https://wa.me/+923348122659" target="_blank"
+                        ><i class="fa-brands fa-whatsapp"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="bi-team-text headline text-uppercase">
+                    <h3>
+                      <a href="https://wa.me/+923348122659"
+                        >Arooj Jameel & Bisma Habib</a
+                      >
+                    </h3>
+                    <span>Frontend Engiineer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bi-team-pagination-carousel-area">
+          <div class="container">
+            <div
+              class="bi-team-pagination-carousel d-flex justify-content-between align-items-center"
+            >
+              <div class="swiper-team-paginations"></div>
+              <div class="bi-team-carousel d-flex">
+                <div
+                  class="bi-slider-arrow d-flex justify-content-center align-items-center bi-team-button-prev_3"
+                >
+                  <i class="fal fa-long-arrow-left"></i>
+                </div>
+                <div
+                  class="bi-slider-arrow d-flex justify-content-center align-items-center bi-team-button-next_3"
+                >
+                  <i class="fal fa-long-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Team section
+	============================================= -->
+
+      <!-- Start of Testimoial section
+	============================================= -->
+      <section id="bi-testimonial-3" class="review-carousel-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="subtitle">Client Reviews</span>
+            <h2>What Clients Say About Us</h2>
+
+            <div class="rating-summary">
+              <div class="avg-rating">4.9</div>
+              <div class="stars">★★★★★</div>
+              <div class="meta">Based on 128+ verified projects</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CAROUSEL -->
+        <div class="carousel-track">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Website performance is outstanding. Fast, clean and fully
+              optimized for business growth.”
+            </p>
+            <div class="reviewer">
+              <strong>Hassan Raza</strong>
+              <span>E-commerce Owner</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “UI/UX design was very modern and user-friendly. Our conversion
+              rate improved instantly.”
+            </p>
+            <div class="reviewer">
+              <strong>Ayesha Malik</strong>
+              <span>Startup PM</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Professional full-stack development with clean architecture and
+              scalable structure.”
+            </p>
+            <div class="reviewer">
+              <strong>Usman Tariq</strong>
+              <span>Tech Founder</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="stars">★★★★☆</div>
+            <p>
+              “Delivered on time with strong backend logic and smooth frontend
+              experience.”
+            </p>
+            <div class="reviewer">
+              <strong>Sara Ahmed</strong>
+              <span>Project Manager</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Mobile responsiveness and speed optimization were perfect across
+              all devices.”
+            </p>
+            <div class="reviewer">
+              <strong>Bilal Khan</strong>
+              <span>Agency Owner</span>
+            </div>
+          </div>
+
+          <!-- DUPLICATE LOOP (for infinite feel) -->
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Website performance is outstanding. Fast, clean and fully
+              optimized for business growth.”
+            </p>
+            <div class="reviewer">
+              <strong>Hassan Raza</strong>
+              <span>E-commerce Owner</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “UI/UX design was very modern and user-friendly. Our conversion
+              rate improved instantly.”
+            </p>
+            <div class="reviewer">
+              <strong>Ayesha Malik</strong>
+              <span>Startup PM</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Testimoial section
+	============================================= -->
+
+      <!-- Start of Footer  section
+	============================================= -->
+      <footer id="bi-footer" class="footer-heavy">
+        <!-- CTA BAR -->
+        <div class="footer-cta">
+          <div class="container">
+            <div class="cta-wrap">
+              <div>
+                <h2>Start Your Tech Career With Us</h2>
+                <p>
+                  Web Development • UI/UX • Freelancing • Internship Training
+                </p>
+              </div>
+              <a href="https://wa.me/923348122659">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAIN FOOTER -->
+        <div class="footer-main">
+          <div class="container">
+            <div class="footer-grid">
+              <!-- BRAND -->
+              <div class="col">
+                <h3>Fatir Dev Studio</h3>
+                <p>
+                  Professional training institute focused on modern web
+                  technologies, design systems, and job-ready development
+                  skills.
+                </p>
+
+                <div class="contact-box">
+                  <p>📞 0334 8122659</p>
+                  <p>📧 fatirahmed946@gmail.com</p>
+                  <p>📍 Gujranwala, Pakistan</p>
+                </div>
+              </div>
+
+              <!-- COURSES -->
+              <div class="col">
+                <h4>Courses</h4>
+                <ul>
+                  <li>Web Development</li>
+                  <li>Frontend Development</li>
+                  <li>Backend Development</li>
+                  <li>Full Stack Training</li>
+                  <li>UI/UX Design</li>
+                  <li>Graphic Design</li>
+                  <li>Freelancing Guide</li>
+                  <li>Portfolio Building</li>
+                </ul>
+              </div>
+
+              <!-- TECHNOLOGIES -->
+              <div class="col">
+                <h4>Technologies</h4>
+                <ul>
+                  <li>HTML, CSS, JS</li>
+                  <li>React / Next.js</li>
+                  <li>Node.js / Express</li>
+                  <li>PHP / Laravel</li>
+                  <li>MongoDB / MySQL</li>
+                  <li>Firebase</li>
+                  <li>Git & GitHub</li>
+                  <li>API Integration</li>
+                </ul>
+              </div>
+
+              <!-- QUICK LINKS -->
+              <div class="col">
+                <h4>Quick Links</h4>
+                <ul>
+                  <li><a href="#bi-about-3">About Us</a></li>
+                  <li><a href="#bi-what-we-offer">Services</a></li>
+                  <li><a href="#bi-register-3">Register</a></li>
+                  <li><a href="#bi-team-3">Team</a></li>
+                  <li><a href="#bi-certificate-3">Verify Certificate</a></li>
+                  <li><a href="#">Projects</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOTTOM BAR -->
+        <div class="footer-bottom">
+          <div class="container">
+            <p>
+              © 2026 Fatir Dev Studio • All Rights Reserved • Built with passion
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer  section
+	============================================= -->
+    </div>
+
+    <!-- For Js Library -->
+    <script>
+      const navbar = document.querySelector(".bi-header-section");
+      const hero = document.querySelector("#bi-slider-3"); // your hero section
+
+      window.addEventListener("scroll", () => {
+        const heroBottom = hero.offsetHeight;
+
+        if (window.scrollY > heroBottom - 80) {
+          navbar.classList.add("bottom");
+        } else {
+          navbar.classList.remove("bottom");
+        }
+      });
+    </script>
+    <script>
+      // =========================
+      // Student Registration
+      // =========================
+
+      document
+        .getElementById("studentForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          let name = document.getElementById("name").value.trim();
+          let fatherName = document.getElementById("fatherName").value.trim();
+          let phone = document.getElementById("phone").value.trim();
+          let cnic = document.getElementById("cnic").value.trim();
+          let fatherCnic = document.getElementById("fatherCnic").value.trim();
+          let city = document.getElementById("city").value.trim();
+          let education = document.getElementById("education").value.trim();
+          let course = document.getElementById("course").value.trim();
+          let address = document.getElementById("address").value.trim();
+
+          if (
+            !name ||
+            !fatherName ||
+            !phone ||
+            !cnic ||
+            !fatherCnic ||
+            !city ||
+            !education ||
+            !course ||
+            !address
+          ) {
+            alert("Please fill all required fields");
+            return;
+          }
+
+          let message = `🎓 ADMISSION REQUEST - FATIR DEV INSTITUTE
+
+👤 Student: ${name}
+👨 Father: ${fatherName}
+📞 Phone: ${phone}
+
+🆔 CNIC: ${cnic}
+🆔 Father CNIC: ${fatherCnic}
+
+🏙 City: ${city}
+🏠 Address: ${address}
+
+🎓 Education: ${education}
+📚 Course: ${course}
+
+💰 Fee: 1250 PKR (Pending)
+
+Please process admission.`;
+
+          let phoneNumber = "923348122659";
+          let url =
+            "https://wa.me/" +
+            phoneNumber +
+            "?text=" +
+            encodeURIComponent(message);
+
+          window.open(url, "_blank");
+        });
+
+      // =========================
+      // Certificate Database
+      // =========================
+
+      const certificates = {
+        3410107892948: {
+          name: "MEHAK SHEHZAD",
+          course: "Web Design and Python Programming",
+          duration: "10 Months",
+          status: "Verified",
+          file: "assets/img/certificates/mehak.png",
+        },
+        3410199565584: {
+          name: "ANAYA NOOR",
+          course: "Web Design and Python Programming",
+          duration: "10 Months",
+          status: "Verified",
+          file: "assets/img/certificates/ANAYA.png",
+        },
+        3410135286672: {
+          name: "AROOJ FATIMA",
+          course: "Web Designing",
+          duration: "04 Months",
+          status: "Verified",
+          file: "assets/img/certificates/AROOJ.png",
+        },
+        3410173071392: [
+          {
+            name: "AYESHA SAJJAL",
+            course: "FULL STACK DEVELOPMENT & UX UI DESIGN",
+            duration: "10 Months",
+            status: "Verified",
+            file: "assets/img/certificates/AYESHA_SAJJAL.png",
+          },
+          {
+            name: "AYESHA SAJJAL",
+            course: "UX UI DESIGN",
+            duration: "03 Months",
+            status: "Verified",
+            file: "assets/img/certificates/AYESHA_UX_UI.png",
+          },
+        ],
+        3410185189239: {
+          name: "MUHAMMAD ALI",
+          course: "Web Design and Python Programming",
+          duration: "10 Months",
+          status: "Verified",
+          file: "assets/img/certificates/ALI.png",
+        },
+        3410138275913: {
+          name: "AWAIS RAZA",
+          course: "Web Designing",
+          duration: "04 Months",
+          status: "Verified",
+          file: "assets/img/certificates/AWAIS.png",
+        },
+        3410156071971: {
+          name: "HASSAN RAZA",
+          course: "Web Designing",
+          duration: "04 Months",
+          status: "Verified",
+          file: "assets/img/certificates/HASSAN.png",
+        },
+        3410152895598: {
+          name: "BISMA HABIB",
+          course: "Web Designing",
+          duration: "04 Months",
+          status: "Verified",
+          file: "assets/img/certificates/BISMA.png",
+        },
+        3410191944531: {
+          name: "SAAD SADDIQUE",
+          course: "Web Designing & Python Programming",
+          duration: "08 Months",
+          status: "Verified",
+          file: "assets/img/certificates/SAAD.png",
+        },
+        5440110854832: {
+          name: "HANIA MEER",
+          course: "Web Designing",
+          duration: "04 Months",
+          status: "Verified",
+          file: "assets/img/certificates/HANIA.png",
+        },
+        3530127762819: {
+          name: "HASEEB SARWAR",
+          course: "UX UI DESIGN",
+          duration: "03 Months",
+          status: "Verified",
+          file: "assets/img/certificates/HASEEB.png",
+        },
+        3410153094130: {
+          name: "MEERAJ FATIMA",
+          course: "UX UI DESIGN",
+          duration: "03 Months",
+          status: "Verified",
+          file: "assets/img/certificates/MEERAJ.png",
+        },
+      };
+
+      // =========================
+      // Verify Certificate
+      // =========================
+
+      function verifyCertificate() {
+        const cnic = document.getElementById("cnic_ver").value.trim();
+        const result = document.getElementById("result");
+
+        if (!cnic) {
+          result.innerHTML = "<p>Please enter CNIC</p>";
+          return;
+        }
+
+        const data = certificates[cnic];
+
+        if (data) {
+          // Multiple certificates
+          if (Array.isArray(data)) {
+            let html = `
+            
+        <div class="card">
+          <h3 style="color:green;">✔ Verified Student</h3>
+          <p><b>Name:</b> ${data[0].name}</p>
+        `;
+
+            data.forEach((cert, index) => {
+              html += `
+          <hr>
+          <h4>Certificate ${index + 1}</h4>
+          <p><b>Course:</b> ${cert.course}</p>
+          <p><b>Duration:</b> ${cert.duration}</p>
+          <p><b>Status:</b> ${cert.status}</p>
+
+          <a href="${cert.file}" target="_blank" class="view-btn">
+            View / Download Certificate ${index + 1}
+          </a><br><br>
+        `;
+            });
+
+            html += `</div>`;
+            result.innerHTML = html;
+          }
+          // Single certificate
+          else {
+            result.innerHTML = `
+        <div class="card">
+          <h3 style="color:green;">✔ Verified Student</h3>
+
+          <p><b>Name:</b> ${data.name}</p>
+          <p><b>Course:</b> ${data.course}</p>
+          <p><b>Duration:</b> ${data.duration}</p>
+          <p><b>Status:</b> ${data.status}</p>
+
+          <a href="${data.file}" target="_blank" class="view-btn">
+            View / Download Certificate
+          </a>
+        </div>
+      `;
+          }
+        } else {
+          result.innerHTML = "<p style='color:red;'>Certificate Not Found</p>";
+        }
+      }
+    </script>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/knob.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/jquery.filterizr.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/hover-revel.js"></script>
+    <script src="assets/js/split-type.min.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/tilt.jquery.min.js"></script>
+    <script src="assets/js/matter.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
