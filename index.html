@@ -366,25 +366,42 @@
         box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
       }
       /* =========================
-   COURSES SECTION
-========================= */
+     COURSES SECTION (RED NEON / DARK STUDIO)
+  ========================= */
+
+      :root {
+        --accent-red: #ff1a1a;
+        --accent-red-glow: rgba(255, 26, 26, 0.3);
+        --accent-red-bg: rgba(255, 26, 26, 0.1);
+        --bg-dark-card: #111111;
+        --text-primary: #ffffff;
+        --text-subtle: #aaaaaa;
+        --border-card: rgba(255, 0, 0, 0.2);
+      }
 
       .courses-section {
         padding: 80px 20px;
+        max-width: 1400px;
+        margin: 0 auto;
       }
 
-      .section-header {
+      .section-title-group {
         text-align: center;
         margin-bottom: 40px;
       }
 
-      .section-header h2 {
+      .section-title-group h2 {
         font-size: 40px;
-        color: #ff1a1a;
+        color: var(--accent-red);
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        margin-bottom: 8px;
+        text-shadow: 0 0 15px var(--accent-red-glow);
       }
 
-      .section-header p {
-        color: #aaa;
+      .section-title-group p {
+        color: var(--text-subtle);
+        font-size: 16px;
       }
 
       .courses-grid {
@@ -394,39 +411,104 @@
       }
 
       .course-card {
-        background: #111;
-        border: 1px solid rgba(255, 0, 0, 0.2);
-        padding: 20px;
+        background: var(--bg-dark-card);
+        border: 1px solid var(--border-card);
+        padding: 24px;
         border-radius: 12px;
-        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       }
 
       .course-card:hover {
         transform: translateY(-8px);
-        border-color: #ff1a1a;
-        box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+        border-color: var(--accent-red);
+        box-shadow: 0 0 25px var(--accent-red-glow);
+      }
+
+      .course-card-top {
+        margin-bottom: 20px;
+      }
+
+      .course-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+
+      .course-tag {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 4px 10px;
+        background: var(--accent-red-bg);
+        color: var(--accent-red);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 26, 26, 0.25);
+      }
+
+      .course-duration-badge {
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--text-primary);
       }
 
       .course-card h3 {
         font-size: 18px;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 4px;
+        line-height: 1.35;
+        font-family: "Space Grotesk", sans-serif;
       }
 
-      .course-card p {
-        color: #aaa;
-        font-size: 14px;
-      }
-
-      .tag {
-        display: inline-block;
-        margin-top: 10px;
+      .level-info {
+        color: var(--accent-red);
         font-size: 12px;
-        padding: 5px 10px;
-        background: rgba(255, 0, 0, 0.1);
-        color: #ff1a1a;
-        border-radius: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
       }
 
-      /* Responsive */
+      .course-desc {
+        color: var(--text-subtle);
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .enroll-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        background: var(--accent-red-bg);
+        border: 1px solid rgba(255, 26, 26, 0.4);
+        color: var(--accent-red);
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        transition: all 0.25s ease;
+      }
+
+      .enroll-btn:hover {
+        background: var(--accent-red);
+        color: #000000;
+        box-shadow: 0 0 15px var(--accent-red-glow);
+      }
+
+      /* Responsive Adjustments */
+      @media (max-width: 1200px) {
+        .courses-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
       @media (max-width: 1024px) {
         .courses-grid {
           grid-template-columns: repeat(2, 1fr);
@@ -437,8 +519,10 @@
         .courses-grid {
           grid-template-columns: 1fr;
         }
+        .section-title-group h2 {
+          font-size: 30px;
+        }
       }
-
       /* =========================
    ADMISSION SECTION
 ========================= */
@@ -1629,109 +1713,287 @@
 
       <!-- Start of Courses section
 ============================================= -->
+      <!-- COURSES SECTION -->
       <section class="courses-section" id="courses">
-        <div class="container">
-          <div class="section-header">
-            <h2>Latest Courses</h2>
-            <p>Learn practical skills with real-world projects</p>
+        <div class="section-title-group">
+          <h2>Latest Studio Courses</h2>
+          <p>
+            Master practical technical skills with real-world industry
+            production projects
+          </p>
+        </div>
+
+        <div class="courses-grid">
+          <!-- 1 -->
+          <div class="course-card">
+            <div class="course-card-top">
+              <div class="course-meta">
+                <span class="course-tag">Web Development</span>
+                <span class="course-duration-badge">⏱ 4 Months</span>
+              </div>
+              <h3>HTML, CSS, JavaScript & Front-End</h3>
+              <p class="level-info">Beginner Level</p>
+              <p class="course-desc">
+                Build modern, dynamic client-side web interfaces with core web
+                standards and modern tooling.
+              </p>
+            </div>
+            <a href="#bi-register-3" class="enroll-btn">Enroll Now</a>
           </div>
 
-          <div class="courses-grid">
-            <!-- 1 -->
-            <div class="course-card">
-              <h3>HTML, CSS & JavaScript</h3>
-              <p>Beginner • 2 Months</p>
-              <span class="tag">Web Development</span>
-              <button><a href="#bi-register-3">Enroll Now</a></button>
+          <!-- 2 -->
+          <div class="course-card">
+            <div class="course-card-top">
+              <div class="course-meta">
+                <span class="course-tag">AI Engineering</span>
+                <span class="course-duration-badge">⏱ 2 Months</span>
+              </div>
+              <h3>Chatbot Agentic AI</h3>
+              <p class="level-info">Intermediate Level</p>
+              <p class="course-desc">
+                Build context-aware conversational bots and intelligent agent
+                workflows using LLM APIs.
+              </p>
             </div>
+            <a href="#bi-register-3" class="enroll-btn">Enroll Now</a>
+          </div>
 
-            <!-- 2 -->
-            <div class="course-card">
-              <h3>Responsive Web Design</h3>
-              <p>Beginner • 1.5 Months</p>
-              <span class="tag">Web Design</span>
-              <button><a href="#bi-register-3">Enroll Now</a></button>
+          <!-- 3 -->
+          <div class="course-card">
+            <div class="course-card-top">
+              <div class="course-meta">
+                <span class="course-tag">AI Engineering</span>
+                <span class="course-duration-badge">⏱ 4 Months</span>
+              </div>
+              <h3>Agentic AI & Calling Agents</h3>
+              <p class="level-info">Advanced Level</p>
+              <p class="course-desc">
+                Design voice-enabled autonomous agents and multi-agent systems
+                for phone automation.
+              </p>
             </div>
+            <a href="#bi-register-3" class="enroll-btn">Enroll Now</a>
+          </div>
 
-            <!-- 3 -->
-            <div class="course-card">
-              <h3>Frontend Development</h3>
-              <p>Intermediate • 3 Months</p>
-              <span class="tag">Web Dev</span>
-              <button><a href="#bi-register-3">Enroll Now</a></button>
+          <!-- 4 -->
+          <div class="course-card">
+            <div class="course-card-top">
+              <div class="course-meta">
+                <span class="course-tag">Complete Stack</span>
+                <span class="course-duration-badge">⏱ 12 Months</span>
+              </div>
+              <h3>Full Stack Dev with AI</h3>
+              <p class="level-info">Comprehensive Masterclass</p>
+              <p class="course-desc">
+                HTML, CSS, JS, Front-End, Back-End, Databases & end-to-end AI
+                workflow integration.
+              </p>
             </div>
+            <a href="#bi-register-3" class="enroll-btn">Enroll Now</a>
+          </div>
 
-            <!-- 4 -->
-            <div class="course-card">
-              <h3>React JS Basics</h3>
-              <p>Intermediate • 2 Months</p>
-              <span class="tag">Framework</span>
-              <button><a href="#bi-register-3">Enroll Now</a></button>
+          <!-- 5 -->
+          <div class="course-card">
+            <div class="course-card-top">
+              <div class="course-meta">
+                <span class="course-tag">Automation</span>
+                <span class="course-duration-badge">⏱ 8 Months</span>
+              </div>
+              <h3>Web Automation</h3>
+              <p class="level-info">Advanced Level</p>
+              <p class="course-desc">
+                Master web scraping, automated testing, browser orchestration,
+                and custom BOT scripts.
+              </p>
             </div>
+            <a href="#bi-register-3" class="enroll-btn">Enroll Now</a>
+          </div>
 
-            <!-- 5 -->
-            <div class="course-card">
+          <!-- 6 -->
+          <div class="course-card">
+            <div class="course-card-top">
+              <div class="course-meta">
+                <span class="course-tag">Programming</span>
+                <span class="course-duration-badge">⏱ 3 Months</span>
+              </div>
               <h3>Python Programming</h3>
-              <p>Beginner • 3 Months</p>
-              <span class="tag">Programming</span>
-              <button><a href="#bi-register-3">Enroll Now</a></button>
+              <p class="level-info">Beginner Level</p>
+              <p class="course-desc">
+                Master Python fundamentals, data structures, algorithms, and
+                automated scripting.
+              </p>
             </div>
+            <a href="#bi-register-3" class="enroll-btn">Enroll Now</a>
+          </div>
 
-            <!-- 6 -->
-            <div class="course-card">
+          <!-- 7 -->
+          <div class="course-card">
+            <div class="course-card-top">
+              <div class="course-meta">
+                <span class="course-tag">Programming</span>
+                <span class="course-duration-badge">⏱ 2 Months</span>
+              </div>
               <h3>OOP in Python</h3>
-              <p>Intermediate • 2 Months</p>
-              <span class="tag">Programming</span>
-              <button><a href="#bi-register-3">Enroll Now</a></button>
+              <p class="level-info">Intermediate Level</p>
+              <p class="course-desc">
+                Deep dive into classes, inheritance, polymorphism, design
+                patterns, and clean code principles.
+              </p>
             </div>
+            <a href="#bi-register-3" class="enroll-btn">Enroll Now</a>
+          </div>
 
-            <!-- 7 -->
-            <div class="course-card">
+          <!-- 8 -->
+          <div class="course-card">
+            <div class="course-card-top">
+              <div class="course-meta">
+                <span class="course-tag">Programming</span>
+                <span class="course-duration-badge">⏱ 2 Months</span>
+              </div>
               <h3>JavaScript Advanced</h3>
-              <p>Advanced • 2 Months</p>
-              <span class="tag">Programming</span>
-              <button><a href="#bi-register-3">Enroll Now</a></button>
+              <p class="level-info">Advanced Level</p>
+              <p class="course-desc">
+                Async JS, closures, prototypes, event loops, functional
+                programming, and modern ES6+ paradigms.
+              </p>
             </div>
+            <a href="#bi-register-3" class="enroll-btn">Enroll Now</a>
+          </div>
 
-            <!-- 8 -->
-            <div class="course-card">
+          <!-- 9 -->
+          <div class="course-card">
+            <div class="course-card-top">
+              <div class="course-meta">
+                <span class="course-tag">Server Side</span>
+                <span class="course-duration-badge">⏱ 3 Months</span>
+              </div>
               <h3>Backend Development</h3>
-              <p>Intermediate • 3 Months</p>
-              <span class="tag">Server Side</span>
-              <button><a href="#bi-register-3">Enroll Now</a></button>
+              <p class="level-info">Intermediate Level</p>
+              <p class="course-desc">
+                Build robust REST APIs, microservices, authentication systems,
+                and server runtime architecture.
+              </p>
             </div>
+            <a href="#bi-register-3" class="enroll-btn">Enroll Now</a>
+          </div>
 
-            <!-- 9 -->
-            <div class="course-card">
+          <!-- 10 -->
+          <div class="course-card">
+            <div class="course-card-top">
+              <div class="course-meta">
+                <span class="course-tag">Data Architecture</span>
+                <span class="course-duration-badge">⏱ 2 Months</span>
+              </div>
+              <h3>Database Development & Admin</h3>
+              <p class="level-info">Intermediate Level</p>
+              <p class="course-desc">
+                Relational SQL databases (PostgreSQL/MySQL), NoSQL MongoDB,
+                indexing, and query tuning.
+              </p>
+            </div>
+            <a href="#bi-register-3" class="enroll-btn">Enroll Now</a>
+          </div>
+
+          <!-- 11 -->
+          <div class="course-card">
+            <div class="course-card-top">
+              <div class="course-meta">
+                <span class="course-tag">Design Systems</span>
+                <span class="course-duration-badge">⏱ 2 Months</span>
+              </div>
               <h3>UI/UX Design</h3>
-              <p>Beginner • 2 Months</p>
-              <span class="tag">Design</span>
-              <button><a href="#bi-register-3">Enroll Now</a></button>
+              <p class="level-info">Beginner Level</p>
+              <p class="course-desc">
+                Wireframing, interactive prototyping, user research, and
+                interface design principles.
+              </p>
             </div>
+            <a href="#bi-register-3" class="enroll-btn">Enroll Now</a>
+          </div>
 
-            <!-- 10 -->
-            <div class="course-card">
+          <!-- 12 -->
+          <div class="course-card">
+            <div class="course-card-top">
+              <div class="course-meta">
+                <span class="course-tag">Design Tool</span>
+                <span class="course-duration-badge">⏱ 1 Month</span>
+              </div>
               <h3>Figma Mastery</h3>
-              <p>Beginner • 1 Month</p>
-              <span class="tag">Design Tool</span>
-              <button><a href="#bi-register-3">Enroll Now</a></button>
+              <p class="level-info">Beginner Level</p>
+              <p class="course-desc">
+                Auto-layout, design tokens, component libraries, and interactive
+                prototyping tricks in Figma.
+              </p>
             </div>
+            <a href="#bi-register-3" class="enroll-btn">Enroll Now</a>
+          </div>
 
-            <!-- 11 -->
-            <div class="course-card">
+          <!-- 13 -->
+          <div class="course-card">
+            <div class="course-card-top">
+              <div class="course-meta">
+                <span class="course-tag">Creative Design</span>
+                <span class="course-duration-badge">⏱ 2 Months</span>
+              </div>
               <h3>Graphic Design Basics</h3>
-              <p>Beginner • 2 Months</p>
-              <span class="tag">Design</span>
-              <button><a href="#bi-register-3">Enroll Now</a></button>
+              <p class="level-info">Beginner Level</p>
+              <p class="course-desc">
+                Brand identities, typography, visual hierarchy, vector graphics,
+                and digital artwork.
+              </p>
             </div>
+            <a href="#bi-register-3" class="enroll-btn">Enroll Now</a>
+          </div>
 
-            <!-- 12 -->
-            <div class="course-card">
-              <h3>Full Stack Development</h3>
-              <p>Advanced • 4 Months</p>
-              <span class="tag">Complete</span>
-              <button><a href="#bi-register-3">Enroll Now</a></button>
+          <!-- 14 -->
+          <div class="course-card">
+            <div class="course-card-top">
+              <div class="course-meta">
+                <span class="course-tag">Productivity</span>
+                <span class="course-duration-badge">⏱ 2 Months</span>
+              </div>
+              <h3>Office Management & Automation</h3>
+              <p class="level-info">Beginner Level</p>
+              <p class="course-desc">
+                Advanced spreadsheet manipulation, digital office workflows,
+                reporting, and administrative tools.
+              </p>
             </div>
+            <a href="#bi-register-3" class="enroll-btn">Enroll Now</a>
+          </div>
+
+          <!-- 15 -->
+          <div class="course-card">
+            <div class="course-card-top">
+              <div class="course-meta">
+                <span class="course-tag">Media Production</span>
+                <span class="course-duration-badge">⏱ 2 Months</span>
+              </div>
+              <h3>Video Editing & Motion Design</h3>
+              <p class="level-info">Beginner Level</p>
+              <p class="course-desc">
+                Cut short-form & long-form content, sound design, color grading,
+                and dynamic visual transitions.
+              </p>
+            </div>
+            <a href="#bi-register-3" class="enroll-btn">Enroll Now</a>
+          </div>
+
+          <!-- 16 -->
+          <div class="course-card">
+            <div class="course-card-top">
+              <div class="course-meta">
+                <span class="course-tag">Growth</span>
+                <span class="course-duration-badge">⏱ 2 Months</span>
+              </div>
+              <h3>Digital Marketing & SEO</h3>
+              <p class="level-info">Beginner Level</p>
+              <p class="course-desc">
+                Performance marketing, social media algorithms, SEO strategies,
+                analytics, and ad funnel design.
+              </p>
+            </div>
+            <a href="#bi-register-3" class="enroll-btn">Enroll Now</a>
           </div>
         </div>
       </section>
