@@ -289,8 +289,13 @@
    CERTIFICATE SECTION
 ========================= */
 
+      /* =========================
+   CERTIFICATE SECTION
+========================= */
+
       #bi-certificate-3 {
-        width: 450px !important;
+        width: 90% !important;
+        max-width: 1200px;
         display: flex;
         flex-direction: column;
         margin: 80px auto;
@@ -298,6 +303,7 @@
         background: #fff;
         border-radius: 12px;
         text-align: center;
+        box-sizing: border-box;
       }
 
       #bi-certificate-3 h2 {
@@ -312,13 +318,18 @@
         border: 1px solid #d0d7e2;
         border-radius: 8px;
         color: #020617;
+        box-sizing: border-box;
       }
 
       #result {
         margin-top: 25px;
+        width: 100%;
       }
 
-      /* Card */
+      /* =========================
+   MAIN RESULT CARD
+========================= */
+
       .card {
         background: #111;
         border: 2px solid #8b0000;
@@ -329,26 +340,39 @@
       }
 
       /* =========================
-   CERTIFICATES GRID
+   CERTIFICATES ROW
 ========================= */
 
       .certificates-container {
-        display: flex;
-        flex-wrap: wrap;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
         gap: 20px;
+        width: 100%;
         justify-content: center;
+        align-items: stretch;
+        box-sizing: border-box;
       }
 
+      /* =========================
+   INDIVIDUAL CERTIFICATE
+========================= */
+
       .certificate-card {
-        flex: 1 1 320px;
-        max-width: 400px;
+        flex: 1 1 300px;
+        max-width: 350px;
+        min-width: 280px;
         background: #111;
         border: 2px solid #8b0000;
         border-radius: 12px;
         padding: 20px;
+        box-sizing: border-box;
       }
 
-      /* Certificate Button */
+      /* =========================
+   VIEW BUTTON
+========================= */
+
       .view-btn {
         display: inline-block;
         margin-top: 12px;
@@ -368,6 +392,28 @@
         box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
       }
 
+      /* =========================
+   MOBILE
+========================= */
+
+      @media (max-width: 768px) {
+        #bi-certificate-3 {
+          width: 95% !important;
+          padding: 20px;
+        }
+
+        .certificates-container {
+          flex-direction: column !important;
+          flex-wrap: nowrap !important;
+          align-items: center;
+        }
+
+        .certificate-card {
+          width: 100%;
+          min-width: 0;
+          max-width: 400px;
+        }
+      }
       /* =========================
      COURSES SECTION (RED NEON / DARK STUDIO)
   ========================= */
@@ -2777,47 +2823,38 @@ Please process admission.`;
 
         if (data) {
           // Multiple certificates
+          // Multiple certificates
           if (Array.isArray(data)) {
             let html = `
-            
-        <div class="card">
-          <h3 style="color:green;">✔ Verified Student</h3>
-          <p><b>Name:</b> ${data[0].name}</p>
-        `;
+    <div class="card">
+      <h3 style="color:green;">✔ Verified Student</h3>
+      <p><b>Name:</b> ${data[0].name}</p>
+
+      <div class="certificates-container">
+  `;
 
             data.forEach((cert, index) => {
               html += `
-          <hr>
-          <h4>Certificate ${index + 1}</h4>
-          <p><b>Course:</b> ${cert.course}</p>
-          <p><b>Duration:</b> ${cert.duration}</p>
-          <p><b>Status:</b> ${cert.status}</p>
+      <div class="certificate-card">
+        <h4>Certificate ${index + 1}</h4>
 
-          <a href="${cert.file}" target="_blank" class="view-btn">
-            View / Download Certificate ${index + 1}
-          </a><br><br>
-        `;
+        <p><b>Course:</b> ${cert.course}</p>
+        <p><b>Duration:</b> ${cert.duration}</p>
+        <p><b>Status:</b> ${cert.status}</p>
+
+        <a href="${cert.file}" target="_blank" class="view-btn">
+          View / Download Certificate ${index + 1}
+        </a>
+      </div>
+    `;
             });
 
-            html += `</div>`;
+            html += `
+      </div>
+    </div>
+  `;
+
             result.innerHTML = html;
-          }
-          // Single certificate
-          else {
-            result.innerHTML = `
-        <div class="card">
-          <h3 style="color:green;">✔ Verified Student</h3>
-
-          <p><b>Name:</b> ${data.name}</p>
-          <p><b>Course:</b> ${data.course}</p>
-          <p><b>Duration:</b> ${data.duration}</p>
-          <p><b>Status:</b> ${data.status}</p>
-
-          <a href="${data.file}" target="_blank" class="view-btn">
-            View / Download Certificate
-          </a>
-        </div>
-      `;
           }
         } else {
           result.innerHTML = "<p style='color:red;'>Certificate Not Found</p>";
