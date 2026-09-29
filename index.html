@@ -2813,59 +2813,183 @@ Please process admission.`;
         },
       };
 
-      // =========================
-      // Verify Certificate
-      // =========================
+      // ======================================
+      // CERTIFICATE VERIFICATION SYSTEM
+      // Supports single and multiple certificates
+      // ======================================
 
       function verifyCertificate() {
-        const cnic = document.getElementById("cnic_ver").value.trim();
+        const cnic = document
+          .getElementById("cnic_ver")
+          .value.trim()
+          .replace(/\D/g, "");
+
         const result = document.getElementById("result");
 
+        // Clear previous results
+        result.innerHTML = "";
+
+        // ======================================
+        // VALIDATE CNIC
+        // ======================================
+
         if (!cnic) {
-          result.innerHTML = "<p>Please enter CNIC</p>";
+          result.innerHTML = `
+            <p style="color:red;">
+                Please enter your CNIC number.
+            </p>
+        `;
           return;
         }
 
+        if (!/^\d{13}$/.test(cnic)) {
+          result.innerHTML = `
+            <p style="color:red;">
+                Please enter a valid 13-digit CNIC.
+            </p>
+        `;
+          return;
+        }
+
+        // ======================================
+        // SEARCH CERTIFICATE
+        // ======================================
+
         const data = certificates[cnic];
 
-        if (data) {
-          // Multiple certificates
-          // Multiple certificates
-          if (Array.isArray(data)) {
-            let html = `
-    <div class="card">
-      <h3 style="color:green;">✔ Verified Student</h3>
-      <p><b>Name:</b> ${data[0].name}</p>
-
-      <div class="certificates-container">
-  `;
-
-            data.forEach((cert, index) => {
-              html += `
-      <div class="certificate-card">
-        <h4>Certificate ${index + 1}</h4>
-
-        <p><b>Course:</b> ${cert.course}</p>
-        <p><b>Duration:</b> ${cert.duration}</p>
-        <p><b>Status:</b> ${cert.status}</p>
-
-        <a href="${cert.file}" target="_blank" class="view-btn">
-          View / Download Certificate ${index + 1}
-        </a>
-      </div>
-    `;
-            });
-
-            html += `
-      </div>
-    </div>
-  `;
-
-            result.innerHTML = html;
-          }
-        } else {
-          result.innerHTML = "<p style='color:red;'>Certificate Not Found</p>";
+        if (!data) {
+          result.innerHTML = `
+            <p style="color:red;">
+                Certificate Not Found.
+            </p>
+        `;
+          return;
         }
+
+        // ======================================
+        // HANDLE SINGLE & MULTIPLE CERTIFICATES
+        // ======================================
+
+        const studentCertificates = Array.isArray(data) ? data : [data];
+
+        if (studentCertificates.length === 0) {
+          result.innerHTML = `
+            <p style="color:red;">
+                No certificates available.
+            </p>
+        `;
+          return;
+        }
+
+        // ======================================
+        // DISPLAY STUDENT INFORMATION
+        // ======================================
+
+        const card = document.createElement("div");
+        card.className = "card";
+
+        const heading = document.createElement("h3");
+        heading.style.color = "#22c55e";
+        heading.textContent = "✔ Verified Student";
+
+        const studentName = document.createElement("p");
+
+        const nameLabel = document.createElement("b");
+        nameLabel.textContent = "Name: ";
+
+        studentName.append(
+          nameLabel,
+          document.createTextNode(
+            studentCertificates[0].name || "Not Available",
+          ),
+        );
+
+        card.append(heading, studentName);
+
+        // ======================================
+        // CERTIFICATE CONTAINER
+        // ======================================
+
+        const container = document.createElement("div");
+        container.className = "certificates-container";
+
+        // ======================================
+        // GENERATE ALL CERTIFICATES
+        // ======================================
+
+        studentCertificates.forEach((cert, index) => {
+          const certificateCard = document.createElement("div");
+          certificateCard.className = "certificate-card";
+
+          const title = document.createElement("h4");
+          title.textContent = `Certificate ${index + 1}`;
+
+          const course = document.createElement("p");
+          course.textContent = `Course: ${cert.course || "N/A"}`;
+
+          const duration = document.createElement("p");
+          duration.textContent = `Duration: ${cert.duration || "N/A"}`;
+
+          const status = document.createElement("p");
+          status.textContent = `Status: ${cert.status || "N/A"}`;
+
+          certificateCard.append(title, course, duration, status);
+
+          // ======================================
+          // CERTIFICATE IMAGE
+          // ======================================
+
+          if (cert.file) {
+            const image = document.createElement("img");
+
+            image.src = cert.file;
+            image.alt = "Student Certificate";
+
+            image.style.width = "100%";
+            image.style.height = "auto";
+            image.style.marginTop = "15px";
+            image.style.borderRadius = "8px";
+
+            image.onerror = function () {
+              this.style.display = "none";
+
+              const error = document.createElement("p");
+              error.style.color = "red";
+              error.textContent = "Certificate image unavailable.";
+
+              certificateCard.appendChild(error);
+            };
+
+            certificateCard.appendChild(image);
+
+            // ======================================
+            // VIEW / DOWNLOAD BUTTON
+            // ======================================
+
+            const button = document.createElement("a");
+
+            button.href = cert.file;
+            button.target = "_blank";
+            button.rel = "noopener noreferrer";
+            button.className = "view-btn";
+
+            button.textContent = `View / Download Certificate ${index + 1}`;
+
+            certificateCard.appendChild(button);
+          } else {
+            const warning = document.createElement("p");
+
+            warning.style.color = "red";
+            warning.textContent = "Certificate file not available.";
+
+            certificateCard.appendChild(warning);
+          }
+
+          container.appendChild(certificateCard);
+        });
+
+        card.appendChild(container);
+        result.appendChild(card);
       }
     </script>
 
